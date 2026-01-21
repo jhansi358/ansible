@@ -1,9 +1,9 @@
 [web]
 172.31.23.23
 
-[localhost]
- localhost
- 
-[localhost:vars]
- name="vedha"
- course="aws"
+[local]
+localhost ansible_connection=local
+
+[local:vars]
+name="vedha"
+course="aws"
