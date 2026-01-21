@@ -4,12 +4,9 @@
    - name: user
      prompt: please enter ur name
      private: false
-   - name: password
-     prompt: please enter ur password
+   - name: course
+     prompt: please enter ur course name
      private: true
-
-       
-     course: devops
   tasks: 
   - name: print data
     ansible.builtin.debug:
