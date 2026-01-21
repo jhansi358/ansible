@@ -16,6 +16,6 @@
   - name: print key value pair
     ansible.builtin.debug:
       msg: "name: {{NAME}}
-            Skills: {{Skills}}
-            Experience: {{Experience}}
-            is she Trainer: {{Trainer}}"
+            \n Skills: {{Skills}}
+            \n Experience: {{Experience}}
+            \n is she Trainer: {{Trainer}}"
