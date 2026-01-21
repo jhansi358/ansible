@@ -1,0 +1,9 @@
+- name: multiplay
+  hosts: localhost
+  tasks: 
+  - name: play1
+    ansible.builtin.ping:
+     msg: "hi from play1"
+  - name: play2
+    ansible.builtin.ping:
+     msg: "hi from play2"   
