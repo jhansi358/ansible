@@ -1,0 +1,16 @@
+- name: multiplay
+  hosts: localhost
+  vars_prompt:
+   - name: user
+     prompt: please enter ur name
+     private: false
+   - name: password
+     prompt: please enter ur password
+     private: true
+
+       
+     course: devops
+  tasks: 
+  - name: print data
+    ansible.builtin.debug:
+     msg: "hi {{user}}, ur enrolled course{{password}}" #calling variable
