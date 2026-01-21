@@ -8,6 +8,5 @@
      vars:                #tasklevel vars
        course: aws
      ansible.builtin.debug:
-      msg: "hi {{name}}, ur enrolled {{course}}" #calling variable
+      msg: "hi {{name}}, ur enrolled course {{course}}" #calling variable
   #tasklevel overrides playlevel variable
-  
