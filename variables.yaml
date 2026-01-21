@@ -1,3 +1,2 @@
-vars:
-     name: jhan
-     course: devops
+name: "jhan"
+course: "devops"
