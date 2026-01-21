@@ -1,4 +1,4 @@
-- name: multiplay
+- name: cmdvars
   hosts: localhost
   tasks: 
   - name: print data
