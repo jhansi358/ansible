@@ -1,0 +1,10 @@
+#playlevel vars
+- name: multiplay
+  hosts: localhost
+  vars:
+     name: jhan
+     course: devops
+  tasks: 
+  - name: print data
+    ansible.builtin.debug:
+     msg: "hi {{name}}, ur enrolled course{{course}}" #calling variable
