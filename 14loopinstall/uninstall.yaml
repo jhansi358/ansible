@@ -1,0 +1,13 @@
+- name: any package installation/uninstall script
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: package installation/uninstall
+    ansible.builtin.package:
+     name: "{{item.name}}"  # item is default for printing ansible list items
+     state: "{{item.state}}"
+    loop:
+     - {name: 'git', state: 'present'}
+     - {name: 'maven', state: 'absent'}
+     - {name: 'nginx', state: 'present'}
+     
