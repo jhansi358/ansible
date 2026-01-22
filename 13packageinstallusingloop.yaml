@@ -1,0 +1,13 @@
+- name: any package installation script
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: package installation
+    ansible.builtin.package:
+     name: "{{item}}"  # item is default for printing ansible list items
+     state: present
+    loop:
+     - git
+     - maven
+     - tree
+     - ansible

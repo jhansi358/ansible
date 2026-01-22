@@ -1,0 +1,9 @@
+- name: loopexample
+  hosts: localhost
+  tasks:
+  - name: loopexample
+    ansible.builtin.debug:
+      msg: "hi {{item}}"  # item is default for printing ansible list items
+    loop:
+     - jhon
+     - vedha
